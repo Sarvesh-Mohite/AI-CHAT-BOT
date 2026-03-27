@@ -1,5 +1,3 @@
-
-```markdown
 # 🤖 AI Friend - Persona-Based Chat & Scene Generation
 
 A modern, full-stack AI companion application featuring dynamic personas, persistent memory, and automated scene generation. This project utilizes a multi-model pipeline via OpenRouter to provide high-quality chat and visual experiences using 2026's leading open-source models.
