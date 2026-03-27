@@ -77,11 +77,10 @@ python -m uvicorn main:app --reload
 Open `index.html` in your browser to start chatting!
 
 ## 📸 Preview
-*Insert a screenshot or GIF of your app here to show off that clean Tailwind UI!*
+<img width="874" height="825" alt="image" src="https://github.com/user-attachments/assets/2614b45a-0f27-4679-8f9e-d0f60279dece" />
+<img width="1904" height="848" alt="image" src="https://github.com/user-attachments/assets/43e80d52-8929-4e61-afe0-fe665e76f396" />
 
-## 📝 License
-Distributed under the MIT License. See `LICENSE` for more information.
 
----
+
 Built by [Sarvesh Mohite]
 
