@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Friend</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white font-sans h-screen flex flex-col">
+
+    <div id="setup-screen" class="flex-1 flex flex-col items-center justify-center p-6">
+        <h1 class="text-3xl font-bold mb-6 text-cyan-400">Meet Your AI Friend</h1>
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-md space-y-4">
+            <input type="text" id="user-name" placeholder="Your Name" class="w-full p-3 rounded bg-gray-700 border-none outline-none focus:ring-2 focus:ring-cyan-500">
+            
+            <label class="block text-sm font-medium text-gray-400 mb-1">Select Bot Gender:</label>
+            <select id="bot-gender" class="w-full p-3 rounded bg-gray-700 border-none outline-none focus:ring-2 focus:ring-cyan-500">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            
+            <input type="text" id="bot-name" placeholder="Name your AI Friend" class="w-full p-3 rounded bg-gray-700 border-none outline-none focus:ring-2 focus:ring-cyan-500">
+            
+            <button onclick="createProfile()" class="w-full bg-cyan-600 hover:bg-cyan-500 py-3 rounded-xl font-bold transition">Start Chatting</button>
+        </div>
+    </div>
+
+    <div id="chat-screen" class="hidden flex-1 flex flex-col overflow-hidden">
+        <header class="p-4 bg-gray-800 border-b border-gray-700 text-center">
+            <h2 id="display-bot-name" class="text-xl font-bold text-cyan-400">Chat</h2>
+        </header>
+        
+        <div id="chat-box" class="flex-1 overflow-y-auto p-4 space-y-4"></div>
+        
+        <div class="p-4 bg-gray-800 flex space-x-2">
+            <input type="text" id="message-input" onkeypress="checkEnter(event)" placeholder="Type a message..." class="flex-1 p-3 rounded-xl bg-gray-700 outline-none focus:ring-2 focus:ring-cyan-500">
+            <button onclick="sendMessage()" class="bg-cyan-600 hover:bg-cyan-500 px-6 py-2 rounded-xl transition font-bold">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Custom Scrollbar for the Chat Box */
+#chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chat-box::-webkit-scrollbar-track {
+    background: #1f2937; /* Matches gray-800 */
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+    background: #0891b2; /* Matches cyan-600 */
+    border-radius: 10px;
+}
+
+/* Message Bubble Animations */
+#chat-box div {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Glassmorphism effect for the input area */
+.bg-gray-800 {
+    backdrop-filter: blur(10px);
+    background-color: rgba(31, 41, 55, 0.95);
+}
+
+/* Customizing the message bubble shapes */
+.text-right span {
+    border-bottom-right-radius: 2px;
+}
+
+.text-left span {
+    border-bottom-left-radius: 2px;
+}
