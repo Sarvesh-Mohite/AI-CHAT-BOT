@@ -68,11 +68,19 @@ create table image_chats (
 
 ### 4. Installation & Run
 ```bash
+#navigate to ai-friend-project
+cd ai-friend-project
+
+#navigate to backend folder
+cd backend
+
 # Install dependencies
 pip install fastapi uvicorn openai python-dotenv supabase
 
 # Start the backend server
 python -m uvicorn main:app --reload
+
+#right click on html file in frontend folder and open with live server
 ```
 Open `index.html` in your browser to start chatting!
 
